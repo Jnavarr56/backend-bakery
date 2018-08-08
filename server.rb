@@ -124,3 +124,7 @@ post "/update_cart" do
     
     puts params_array_strings
 end
+
+get "/order_conf" do
+    erb :order_conf
+end

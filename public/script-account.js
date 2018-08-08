@@ -164,7 +164,7 @@ document.getElementById("cartButton").addEventListener("click", ()=>{
         for (let x = 1; x < document.getElementById("cart-row").children.length; x++) {
             order.push(x + ". " + document.getElementById("cart-row").children[x].children[0].innerHTML + " " + document.getElementById("cart-row").children[x].children[2].innerHTML);
         }
-        order.push("Total: " + document.getElementById("cartButtonText").innerHTML.split(" ")[2]);
+        order.push("<br><br>Total: " + document.getElementById("cartButtonText").innerHTML.split(" ")[2]);
         
 
         let custName =  document.getElementById("custName").innerHTML.split(" ").splice(1).join(" ").toUpperCase();
@@ -172,15 +172,16 @@ document.getElementById("cartButton").addEventListener("click", ()=>{
         let template_params = {
             "dest_email": custEmail,
             "to_name": custName,
-            "message_html": order.join("\n")
+            "message_html": order.join("<br>")
         }
      
         var service_id = "default_service";
         var template_id = "reciept";
-        console.log(order.join("\n"));
+        console.log(order.join("<br>"));
         var confirmation = confirm("Are you sure you want to make this purchase? You will receive a receipt via email.");
         if (confirmation === true) {
             emailjs.send(service_id,template_id,template_params);
+            window.location = "/order_conf";
         }
         else {
             return;

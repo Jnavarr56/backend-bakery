@@ -1,4 +1,4 @@
 username,password,first name,last name,privilege,organization,cart
 david@nycda.com,password123,david,patlut,customer,nycda-staff,"[""co-03 3""]"
 john@nycda.com,password321,john,doe,customer,nycda-staff,"[""m-01 1"", ""m-02 1"", ""m-03 1""]"
-jnavarr56@gmail.com,password,jorge,navarro,customer,nycda-student,"[""m-02 1"", ""m-03 1""]"
+jnavarr56@gmail.com,password,jorge,navarro,customer,nycda-student,"[""m-02 1""]"
