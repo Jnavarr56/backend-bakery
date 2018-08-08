@@ -158,3 +158,39 @@ document.getElementById("leave").addEventListener("click", ()=>{
     window.location = "/login";
 });
 
+document.getElementById("cartButton").addEventListener("click", ()=>{
+    if (document.getElementById("cartButtonText").innerHTML.split(" ").length > 2) {
+        let order = [];
+        for (let x = 1; x < document.getElementById("cart-row").children.length; x++) {
+            order.push(x + ". " + document.getElementById("cart-row").children[x].children[0].innerHTML + " " + document.getElementById("cart-row").children[x].children[2].innerHTML);
+        }
+        order.push("Total: " + document.getElementById("cartButtonText").innerHTML.split(" ")[2]);
+        
+
+        let custName =  document.getElementById("custName").innerHTML.split(" ").splice(1).join(" ").toUpperCase();
+        let custEmail =  document.getElementById("logout").innerHTML.split(" ").splice(1);
+        let template_params = {
+            "dest_email": custEmail,
+            "to_name": custName,
+            "message_html": order.join("\n")
+        }
+     
+        var service_id = "default_service";
+        var template_id = "reciept";
+        console.log(order.join("\n"));
+        var confirmation = confirm("Are you sure you want to make this purchase? You will receive a receipt via email.");
+        if (confirmation === true) {
+            emailjs.send(service_id,template_id,template_params);
+        }
+        else {
+            return;
+        }
+        
+    }
+
+    else {
+        console.log("cart empty");
+    }
+
+    
+});

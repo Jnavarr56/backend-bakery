@@ -57,11 +57,19 @@
     <h2 id = "lastCartCap">previous cart [0]:</h2>
   </div>
   <div id = "profile">
-    <h3>profile: <%=@name%></h3>
+    <h3 id = "custName">profile: <%=@name%></h3>
     <h3 id = "logout">username: <%=@user%></h3>
     <h3>organization: <%=@orgz%></h3>
   </div>
 
   <h4 id = "feed"><%=@cartRec%></h4>
+  
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("user_oe6KIInQbpTMnxTWwnggD");
+     })();
+  </script>
   <script src="script-account.js"></script>
 </body>
+
