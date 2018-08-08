@@ -6,9 +6,7 @@ for (let x = 0; x < document.getElementsByClassName("product-row").length; x++) 
                 document.getElementsByClassName("product-row")[y].children[0].style.fontSize = "120%";
                 document.getElementsByClassName("product-row")[y].children[0].style.left = "10px";
                 document.getElementsByClassName("product-row")[y].classList.add("hovering");
-                document.getElementsByClassName("product-row")[y].classList.remove("non-hovering");
-                
-                
+                document.getElementsByClassName("product-row")[y].classList.remove("non-hovering");   
                 for (let z = 1; z < document.getElementsByClassName("product-row")[y].children.length; z++) {
                     document.getElementsByClassName("product-row")[y].children[z].style.visibility = "hidden";
                 }
@@ -180,8 +178,9 @@ document.getElementById("cartButton").addEventListener("click", ()=>{
         console.log(order.join("<br>"));
         var confirmation = confirm("Are you sure you want to make this purchase? You will receive a receipt via email.");
         if (confirmation === true) {
-            emailjs.send(service_id,template_id,template_params);
-            window.location = "/order_conf";
+            emailjs.send(service_id,template_id,template_params).then((response)=>{
+                window.location = "/order_conf";
+            });
         }
         else {
             return;

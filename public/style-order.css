@@ -2,9 +2,8 @@
 
 body {
     height: 850px;
-    width: 1200px;
-    min-width: 1600px;
-
+    width: 1000px;
+ 
     margin: 0 auto;
     
     position: relative;
@@ -14,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
 
-
+    
 }
 h1, h3 {
     font-family: "Anton";
@@ -23,5 +22,4 @@ h1, h3 {
 #goback {
     color: blueviolet;
     font-family: "Anton";
-
 }
