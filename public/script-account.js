@@ -154,6 +154,7 @@ if (document.getElementById("feed").innerText !== "n/a" && document.getElementBy
 }
 
 document.getElementById("leave").addEventListener("click", ()=>{
+    updateCartRemove();
     window.location = "/login";
 });
 

@@ -110,8 +110,8 @@ post "/update_cart" do
 
     CSV.open("accounts_database.csv", "wb") do |csv_write|
         CSV.foreach("accounts_database_lag.csv") do |row|
-           if row[0] === params_array_strings[params_array_strings.length-1]
-              row[6] = params_array_strings.slice(0..params_array_strings.length-2)
+           if row[0] === params_array_strings[params_array_strings.length-1] 
+                row[6] = params_array_strings.slice(0..params_array_strings.length-2)
            end
            csv_write << row 
         end
