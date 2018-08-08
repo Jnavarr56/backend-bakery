@@ -1,6 +1,6 @@
 username,password,first name,last name,privilege,organization,cart
 david@nycda.com,password123,david,patlut,customer,nycda-staff,"[""co-03 3""]"
 john.murphy@nycda.com,password321,john,murphy,customer,nycda-staff,"[""ca-01 1"", ""ca-02 1""]"
-jnavarr56@gmail.com,password,jorge,navarro,customer,nycda-student,"[""m-01 3""]"
-kaymok3@gmail.com,moemoe,kay,mokay,customer,nycda-student,"[""m-03 1""]"
-xlisachan@gmail.com,lisalisa,lisa,chan,customer,nycda-student,"[""ca-01 1"", ""ca-02 1""]"
+jnavarr56@gmail.com,password,jorge,navarro,customer,nycda-student,"[""ca-01 1"", ""ca-02 2""]"
+kaymok3@gmail.com,moemoe,kay,mokay,customer,nycda-student,"[""ca-03 50""]"
+xlisachan@gmail.com,lisalisa,lisa,chan,customer,nycda-student,"[""ca-03 100""]"
