@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+    height: 850px;
+    width: 1200px;
+    min-width: 1600px;
+
+    margin: 0 auto;
+    
+
+
+    position: relative;
+
+    background-color: #ff69b4;
+}
+h1 {
+    font-family: "Anton";
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0%;
+
+    height: 5%;
+    width: 100%;
+    min-width: 1400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-style: none none solid none;
+
+    margin: 0 auto;
+
+    z-index: 40;
+
+    background-color: white;
+}
+.nav-item {
+    font-family: "Anton";
+    padding: 0 20px;
+}
+section {
+    height: 95%;
+    width: 50%;
+
+    background-color: white;
+
+    border-style: solid;
+
+    margin: 0 auto;
+
+    position: absolute;
+    top: 80px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+}
+.product-row {
+    height: 25%;
+    width: 100%;
+
+    background-color: blueviolet;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    overflow: hidden;
+}
+.row-caption {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+    font-family: "Anton";
+    color: white;
+}
+#cart-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    color: black;
+    background-color: white;
+
+    visibility: hidden;
+
+    flex-grow: 1;
+
+    overflow: scroll;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px 1px 3px 1px;
+
+    height: 70%;
+
+    position: relative;
+}
+.dessert-text {
+    color: black;
+    font-family: "Anton";
+
+    font-size: 110%;
+
+}
+
+.hovering:hover  {
+    background-color: black;
+}
+.non-hovering {
+    background-color: blue;
+    border-style: solid none solid none;
+    border-color: white;
+}
+.desc-wrap {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    height: 30px;
+    width: 200px;
+
+    margin: 5px auto;
+
+   
+}
+.desc {
+    font-size: 90%;
+}
+.dessert-pic {
+
+    height: 120px;
+    width: 150px;
+
+    border-style: solid;
+}
+
+input {
+    margin: 10x 0 20px 0;
+}
+#cartButton {
+    background-color: black;
+    color: white;
+
+    height: 90%;
+    width: 700px;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h4 {
+    opacity: 0;
+}
+
+h2, h5 {
+    color: white;
+    font-family: "Anton";
+}
+#profile {
+    position: fixed;
+    top: 100px;
+    right: -5px;
+
+    height: 300px;
+    width: 600px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-style: solid none solid solid;
+    border-radius: 15px 0  0 15px;
+
+    overflow: scroll;
+
+    color: black;
+    font-size: 20px;
+    border-color: black;
+
+    padding-left: 5px;
+
+    font-family: "Anton";
+
+    border-radius: 5px;
+}
+
+#lastCart {
+    position: fixed;
+    
+    top: 410px;
+    right: 0;
+
+    height: 450px;
+    width: 600px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-style: solid none solid solid;
+    border-radius: 15px 0  0 15px;
+
+    overflow: scroll;
+
+    color: black;
+
+    font-size: 20px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#lastCartCap {
+    color: black;   
+}

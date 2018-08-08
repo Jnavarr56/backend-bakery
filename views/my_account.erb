@@ -1,0 +1,67 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Account</title>
+      <link rel="stylesheet" href="style-account.css">
+</head>
+<body>
+  <nav>
+    <h1 class = "nav-item">catalog</h1>
+    <div id = "cartButton"><h1 id = "cartButtonText">purchase cart</h1></div>
+    <h1 id = "leave" class = "nav-item">log out</h1>
+  </nav>
+  <section>
+    <div class = "product-row hovering">
+      <h1 class = "row-caption">muffins.</h1>
+      <% @muffins_objs.each do |muffin| %>
+        <div class = "itemHolder">
+          <h2 class ="dessert-text"><%=muffin.dessertName%></h2>
+          <img class ="dessert-pic" src = <%=muffin.pic%>>
+          <h3 class ="dessert-text">$<%=muffin.dessertPrice%></h3>
+          <button>add</button>
+          <input type = "number" min = "1" max = "200" id = <%=muffin.dessertCode%>>
+          <div class = "desc-wrap"><h3 class ="dessert-text desc"><%=muffin.dessertDesc%></h3></div>
+        </div>
+      <%end%>
+    </div>
+    <div class = "product-row hovering">
+      <h1 class = "row-caption">cookies.</h1>
+      <% @cookies_objs.each do |cookie| %>
+        <div class = "itemHolder">
+          <h2 class ="dessert-text"><%=cookie.dessertName%></h2>
+          <img class ="dessert-pic" src = <%=cookie.pic%>>
+          <h3 class ="dessert-text">$<%=cookie.dessertPrice%></h3>
+          <button>add</button>
+          <input type = "number" min = "1" max = "200" id = <%=cookie.dessertCode%>>
+          <div class = "desc-wrap"><h3 class ="dessert-text desc"><%=cookie.dessertDesc%></h3></div>
+        </div>
+      <%end%>
+    </div>
+    <div class = "product-row hovering">
+      <h1 class = "row-caption">cakes.</h1>
+      <% @cakes_objs.each do |cake| %>
+        <div class = "itemHolder">
+          <h2 class ="dessert-text"><%=cake.dessertName%></h2>
+          <img class ="dessert-pic" src = <%=cake.pic%>>
+          <h3 class ="dessert-text">$<%=cake.dessertPrice%></h3>
+          <button>add</button>
+          <input type = "number" min = "1" max = "200" id = <%=cake.dessertCode%>>
+          <div class = "desc-wrap"><h3 class ="dessert-text desc"><%=cake.dessertDesc%></h3></div>
+        </div>
+      <%end%>
+    </div>
+    <div class = "product-row hovering" id = "cart-row">
+      <h1 id= "cartCount" class = "row-caption">current cart [0]</h1>
+    </div>
+  </section>
+  <div id = "lastCart">
+    <h2 id = "lastCartCap">previous cart [0]:</h2>
+  </div>
+  <div id = "profile">
+    <h3>profile: <%=@name%></h3>
+    <h3 id = "logout">username: <%=@user%></h3>
+    <h3>organization: <%=@orgz%></h3>
+  </div>
+
+  <h4 id = "feed"><%=@cartRec%></h4>
+  <script src="script-account.js"></script>
+</body>

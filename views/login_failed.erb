@@ -1,0 +1,16 @@
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+      <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+    <div id = "form-wrapper">
+        <h1>gustaf benôit customer login.</h1>
+        <form action = "/my_account" method = "post">
+            <div class = "form-row"><p>username:</p><input name = "username" autocomplete="off"></input></div>
+            <div class = "form-row"><p>password:</p><input name = "password" type = "password" autocomplete="off"></input></div>
+            <div class = "form-row"><button type = "submit">submit</button></div>
+        </form>
+        <h3 id = "fail-text">This username/password combination does not exist. Please try again.</h3>
+    </div>
+</body>

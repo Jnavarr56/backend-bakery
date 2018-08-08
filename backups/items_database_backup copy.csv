@@ -1,0 +1,10 @@
+type,name,description,price,code,pic
+muffin,Au Bitlau,A German chocolate based treat.,60,m-01,m-01.jpg
+muffin,Bluebery Frich,Made with Nordic blueberries.,72,m-02,m-02.jpg
+muffin,Strawberry Gladedanu,"Traditional cordovian recipe, reinterpreted.",80,m-03,m-03.jpg
+cookie,Himalayan Fusion,Playful mixture of native sourced ingredients.,45,co-01,co-01.jpg
+cookie,Australian Chocolate,Made with very rare outback beans.,63,co-02,co-02.jpg
+cookie,Andean Berry,Made from beans grown at an extremely high elevation.,58,co-03,co-03.png
+cake,Flan Reinvented,An innovative taken on a Latin classic.,800,ca-01,ca-01.jpg
+cake,Tiramisu,A timeless recipe.,920,ca-02,ca-02.jpg
+cake,Worthington,"An orignal from our head chef, debuing for the first time this month.",1200,ca-03,ca-03.jpg

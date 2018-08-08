@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chilkat (9.5.0.65-x86-linux)
+    mustermann (1.0.2)
+    rack (2.0.5)
+    rack-protection (2.0.3)
+      rack
+    sinatra (2.0.3)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.3)
+      tilt (~> 2.0)
+    tilt (2.0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chilkat (~> 9.5, >= 9.5.0.55)
+  sinatra
+
+BUNDLED WITH
+   1.16.3

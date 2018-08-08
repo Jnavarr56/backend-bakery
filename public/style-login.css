@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+    height: 800px;
+    width: 1000px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+p, button, h1 {
+    font-family: "Anton";
+}
+#form-wrapper {
+
+    height: 400px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+form {
+    height: 100%;
+    width: 100%;
+
+    border-style: solid;    
+}
+
+.form-row {
+    height: calc(100% / 3);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+input {
+    border-radius: 15px;
+
+    border-style: solid;
+
+    width: 30%;
+
+    margin: 0 10px;
+
+    text-indent: 10px;
+}
+
+button {
+    border-radius: 15px;
+
+    height: 30%;
+    width: 40%;
+
+    background-color: #ff69b4;
+}
+#fail-text {
+    color: red;
+    font-family: "Anton";
+
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}

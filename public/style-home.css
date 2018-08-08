@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+body {
+ height: calc(3 * 100vh);
+ width: 100vw;
+
+ min-height: 2300px;
+ min-width: 1440px;
+
+ margin: 0 auto;
+
+ position: relative;
+
+ opacity: 0;
+
+} 
+nav {
+  height: 65px;
+  width: 100%;
+
+  border-style: none none solid none;
+  
+  
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 100;
+
+ background-color: white;
+}
+.item-holder {
+  height: 100%;
+  min-width: 200%;
+  width: 20%;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.nav-item {
+  display: inline;
+
+  margin: 10px;
+
+  position: relative;
+  top: 7.5px;
+
+  font-family: "Anton";
+
+  padding: 8px;
+  
+  border-radius: 15px;
+}
+#login {
+  right: 53%;
+}
+#sec-wrapper {
+  height: 100%;
+  width: 100%;
+
+
+  margin: 0 auto; 
+
+
+}
+.body-sec {
+  height: calc(100% / 3);
+  width: 100%;
+  
+  border-style: solid none solid none;
+  
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#home-sec {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#home-stack{
+  height: 80%;
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative; 
+}
+.stack {
+  height: 25%;
+  width: 100%;
+
+  border-style: solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.odd {
+  position: relative;
+  /*right: 15%;*/
+}
+.oddAnim {
+  animation: oddAnim 1s ease .5s 1 forwards;
+}
+@keyframes oddAnim {
+  0% {right: 0%}
+  75% {right: 16%}
+  100% {right: 15%}
+}
+.even {
+  position: relative;
+  /*left: 15%;*/
+}
+.evenAnim {
+  animation: evenAnim 1s ease .5s 1 forwards;
+}
+@keyframes evenAnim {
+  0% {left: 0%}
+  75% {left: 16%}
+  100% {left: 15%;}
+}
+#stack-1 {
+  background-image: url("bakery-home-purple.gif");
+  position: relative;
+  top: 12px;
+}
+#stack-2 {
+  background-image: url("bakery-home-green.gif");
+  position: relative;
+  top: 9px;
+  
+}
+#stack-3 {
+  background-image: url("bakery-home-red.gif");
+  position: relative;
+  top: 6px;
+}
+#stack-4 {
+  background-image: url("bakery-home-yellow.gif");
+  position: relative;
+  top: 3px;
+}
+#title {
+  font-family: "Anton";
+  font-size: 300%;
+
+  position: absolute;
+  top: -110px;
+  left: 0px;
+
+  animation-delay: 3.75s;
+
+  opacity: 0;
+}
+.title-caption {
+  font-family: "Anton";
+  font-size: 150%;
+
+  opacity: 0;
+  
+  position: relative;
+}
+.caption-fade-in {
+  animation: captionFade .5s linear 0s 1 forwards;
+}
+@keyframes captionFade {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+#title-cap-1 {
+  animation-delay: 1.75s;
+  left: 65%;
+}
+#title-cap-2 {
+  animation-delay: 2.25s;
+  right: 65%;
+}
+#title-cap-3 {
+  animation-delay: 2.75s;
+  left: 65%;
+}  
+#title-cap-4 {
+  animation-delay: 3.25s;
+  right: 65%;
+}
+#landing-arrow {
+  opacity: 0; 
+  animation-delay: 4.25s;
+}
+
+.arrow-down {
+  height: 55px;
+  width: 55px;
+
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+
+  color: white;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+
+  font-size: 200%;
+
+  border-style: solid;
+}
+.arrow-up {
+  height: 55px;
+  width: 55px;
+
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+
+  color: white;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+
+  font-size: 200%;
+
+  border-style: solid;
+  
+}
+.arrow:hover {
+  background-color: white;
+  color: black;
+  border-style: solid;
+  font-size: 200%;
+  height: 60px;
+  width: 60px;
+}
+
+.flashSectionIn {
+  opacity: 0;
+  animation: flashSectionIn 1s linear .5s 1 forwards;
+}
+@keyframes flashSectionIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#selec-wrapper {
+  height: 250px;
+  width: 1200px;
+
+  display: flex;
+}
+.selec-stack {
+  height: 100%;
+  width: 33.33%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-style: solid;
+}
+#selec-stack-1 {
+  background-image: url("bakery-selec-red.gif");
+  left: 3px;
+}
+#selec-stack-2 {
+  background-image: url("bakery-selec-pink.gif");
+  z-index: 10;
+}
+#selec-stack-3 {
+  background-image: url("bakery-selec-blue.gif");
+  right: 3px;
+}
+.selec-stack-up {
+  position: relative;
+  animation: selecStackUp 1s ease 0s 1 forwards;
+}
+@keyframes selecStackUp {
+  0% {bottom: 0px}
+  75% {bottom: 135px;}
+  100% {bottom: 125px}
+}
+.selec-stack-down {
+  position: relative;
+  animation: selecStackDown 1s ease 0s 1 forwards;
+}
+@keyframes selecStackDown {
+  0% {top: 0px}
+  75% {top: 135px;}
+  100% {top: 128px}
+}
+
+.sec-caption {
+  font-family: "Anton";
+  font-size: 150%;
+
+  opacity: 0;
+
+  position: relative;
+}
+.selec-cap-fadein {
+  animation: selec-cap-fadein 1s linear 0s 1 forwards;
+}
+#sec-caption-1 {
+  animation-delay: .5s;
+}
+#sec-caption-2 {
+  animation-delay: 1s;
+}
+#sec-caption-3 {
+  animation-delay: 1.5s;
+}
+@keyframes selec-cap-fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+#about-box {
+  position: absolute;
+  top: 160px;
+  left: 35.9%;
+
+  height: 300px;
+  width: 400px;
+
+  border-style: solid;
+
+  background-image: url("bakery-about-green.gif");
+  background-position: right 25%;
+
+}
+.about-left {
+  animation: aboutLeft .5s linear .0s 1 forwards;
+}
+@keyframes aboutLeft {
+  0% {left: 36%;}
+  100% {left: 22%;}
+}
+#contact-box {
+  position: absolute;
+  top: 463px;
+  left: 35.9%;
+
+  height: 300px;
+  width: 400px;
+
+  border-style: solid;
+
+  background-image: url("bakery-about-yellow.gif");
+  background-position: right 25%;
+
+  flex-direction: column;
+}
+.about-right {
+  animation: aboutRight .5s linear .0s 1 forwards;
+}
+@keyframes aboutRight {
+  0% {left: 36%;}
+  100% {left: 50%;}
+}
+.about {
+  font-family: "Anton";
+  font-size: 70%;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.background {
+  color: black;
+  font-size: 180%;
+  width: 100%;
+
+  opacity: 0;
+
+  position: absolute;
+  top: 40%;
+
+}
+.about-cap-fade {
+  animation: aboutCap .5s linear 0s 1 forwards;
+}
+@keyframes aboutCap {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+#ack1 {
+  animation-delay: .5s;
+}
+#ack2 {
+  animation-delay: 1s;
+}
