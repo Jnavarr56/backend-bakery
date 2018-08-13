@@ -26,7 +26,7 @@ to flex CSV manipulation skills.*
 - Sends email "receipt" to user when "purchase" made.
 
 ### Homepage:
-[Imgur](https://i.imgur.com/FzskUOj.gifv)
+![homepage-gif](https://i.gyazo.com/7fa9ec7a5b40e09b78db27919769996c.gif)](https://gyazo.com/7fa9ec7a5b40e09b78db27919769996c)
 
 ### Login Portal:
 
