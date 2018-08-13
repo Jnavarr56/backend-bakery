@@ -25,3 +25,13 @@ to flex CSV manipulation skills.*
 - Catalog page that "remembers" users' past cart configuration by reading and writing to account csv files.
 - Sends email "receipt" to user when "purchase" made.
 
+### Homepage:
+[![Image from Gyazo](https://i.gyazo.com/44038f66835ad338e6c2c07335b66c8a.gif)](https://gyazo.com/44038f66835ad338e6c2c07335b66c8a)
+
+[![Image from Gyazo](https://i.gyazo.com/78f866230a777fdfb90372f18f532124.gif)](https://gyazo.com/78f866230a777fdfb90372f18f532124)
+
+[![Image from Gyazo](https://i.gyazo.com/2ddb994839a432205c05267b1500c4d8.gif)](https://gyazo.com/2ddb994839a432205c05267b1500c4d8)
+
+### Login Portal:
+
+
